@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006DB09C28A11D5B007CE8D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 006DB09B28A11D5B007CE8D3 /* GoogleService-Info.plist */; };
+		006DB09F28A12692007CE8D3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DB09E28A12692007CE8D3 /* DatabaseManager.swift */; };
+		006DB0A128A127AC007CE8D3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DB0A028A127AC007CE8D3 /* AuthManager.swift */; };
+		006DB0A328A1288A007CE8D3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DB0A228A1288A007CE8D3 /* StorageManager.swift */; };
 		009A5C1928A10076006BC7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A5C1828A10076006BC7F0 /* AppDelegate.swift */; };
 		009A5C1B28A10076006BC7F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A5C1A28A10076006BC7F0 /* SceneDelegate.swift */; };
 		009A5C1D28A10076006BC7F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A5C1C28A10076006BC7F0 /* HomeViewController.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006DB09B28A11D5B007CE8D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		006DB09E28A12692007CE8D3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		006DB0A028A127AC007CE8D3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		006DB0A228A1288A007CE8D3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		009A5C1528A10076006BC7F0 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009A5C1828A10076006BC7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009A5C1A28A10076006BC7F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006DB09D28A125EA007CE8D3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				009A5C4228A10F56006BC7F0 /* EditProfileViewController.swift */,
+				009A5C4028A10F40006BC7F0 /* PostViewController.swift */,
+				009A5C4428A10F65006BC7F0 /* SettingsViewController.swift */,
+				009A5C4628A10F73006BC7F0 /* ListViewController.swift */,
+				009A5C4828A11010006BC7F0 /* SearchViewController.swift */,
+				009A5C4A28A1102B006BC7F0 /* SearchResultViewController.swift */,
+				009A5C4C28A11061006BC7F0 /* PostEditorViewController.swift */,
+				009A5C4E28A11084006BC7F0 /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		009A5C0C28A10076006BC7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,7 @@
 				009A5C2D28A10BC2006BC7F0 /* Views */,
 				009A5C2C28A10BB7006BC7F0 /* Controllers */,
 				009A5C2628A1007A006BC7F0 /* Info.plist */,
+				006DB09B28A11D5B007CE8D3 /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -103,6 +127,7 @@
 		009A5C2C28A10BB7006BC7F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				006DB09D28A125EA007CE8D3 /* General */,
 				009A5C3A28A10E3F006BC7F0 /* Other */,
 				009A5C3928A10D83006BC7F0 /* Core Tabs */,
 			);
@@ -130,6 +155,9 @@
 			children = (
 				009A5C1828A10076006BC7F0 /* AppDelegate.swift */,
 				009A5C1A28A10076006BC7F0 /* SceneDelegate.swift */,
+				006DB09E28A12692007CE8D3 /* DatabaseManager.swift */,
+				006DB0A028A127AC007CE8D3 /* AuthManager.swift */,
+				006DB0A228A1288A007CE8D3 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -159,14 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				009A5C3B28A10E4D006BC7F0 /* Onboarding */,
-				009A5C4028A10F40006BC7F0 /* PostViewController.swift */,
-				009A5C4228A10F56006BC7F0 /* EditProfileViewController.swift */,
-				009A5C4428A10F65006BC7F0 /* SettingsViewController.swift */,
-				009A5C4628A10F73006BC7F0 /* ListViewController.swift */,
-				009A5C4828A11010006BC7F0 /* SearchViewController.swift */,
-				009A5C4A28A1102B006BC7F0 /* SearchResultViewController.swift */,
-				009A5C4C28A11061006BC7F0 /* PostEditorViewController.swift */,
-				009A5C4E28A11084006BC7F0 /* PublishPostViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -194,7 +214,6 @@
 				041575B4F0FD3408F3CA64CD /* Pods-Instagram.debug.xcconfig */,
 				2106A8F9AB1B87C3CAA972F4 /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				009A5C2528A1007A006BC7F0 /* LaunchScreen.storyboard in Resources */,
+				006DB09C28A11D5B007CE8D3 /* GoogleService-Info.plist in Resources */,
 				009A5C2228A1007A006BC7F0 /* Assets.xcassets in Resources */,
 				009A5C2028A10076006BC7F0 /* Main.storyboard in Resources */,
 			);
@@ -320,12 +340,15 @@
 				009A5C1D28A10076006BC7F0 /* HomeViewController.swift in Sources */,
 				009A5C3F28A10E7D006BC7F0 /* RegistrationViewController.swift in Sources */,
 				009A5C4D28A11061006BC7F0 /* PostEditorViewController.swift in Sources */,
+				006DB0A328A1288A007CE8D3 /* StorageManager.swift in Sources */,
 				009A5C4128A10F40006BC7F0 /* PostViewController.swift in Sources */,
+				006DB09F28A12692007CE8D3 /* DatabaseManager.swift in Sources */,
 				009A5C3628A10D26006BC7F0 /* NotificationsViewController.swift in Sources */,
 				009A5C4B28A1102B006BC7F0 /* SearchResultViewController.swift in Sources */,
 				009A5C3D28A10E6E006BC7F0 /* LoginViewController.swift in Sources */,
 				009A5C4928A11010006BC7F0 /* SearchViewController.swift in Sources */,
 				009A5C3828A10D32006BC7F0 /* ProfileViewController.swift in Sources */,
+				006DB0A128A127AC007CE8D3 /* AuthManager.swift in Sources */,
 				009A5C1928A10076006BC7F0 /* AppDelegate.swift in Sources */,
 				009A5C1B28A10076006BC7F0 /* SceneDelegate.swift in Sources */,
 				009A5C4728A10F73006BC7F0 /* ListViewController.swift in Sources */,
